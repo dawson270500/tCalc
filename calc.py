@@ -17,7 +17,7 @@ while True:
 		numSet = False
 		num2 = ""
 		op = ""
-		
+
 		for x in inp:
 			if x == "+" or x == "-" or x == "/" or x=="*":
 				op = x
@@ -40,7 +40,7 @@ while True:
 			if x.isnumeric() or x == "p" or x == "m":
 				if numSet == False:
 					if x == "p":
-						num1 = 3.14159
+						num1 = "3.14159"
 					
 					elif x == "m":
 						num1 = memory
@@ -49,7 +49,7 @@ while True:
 						num1 = num1+x
 				else:
 					if x == "p":
-						num2 = 3.14159
+						num2 = "3.14159"
 					
 					elif x == "m":
 						num2 = memory
@@ -86,6 +86,4 @@ while True:
 			print("Invalid operator")
 	
 	else:
-		memory = lastAnswer
-
-	
+		memory = lastAnswer	
