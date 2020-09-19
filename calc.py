@@ -9,14 +9,15 @@ while True:
 	if inp == "exit":	
 		break
 
-	num1 = ""
-	numSet = False
-	num2 = ""
-	op = ""
 	if inp == "help":
 		print("You can add onto the last answer given, by typing '<operator><Number or value>'\nSupported operators:\n\t+\n\t-\n\t*\n\t/\nUsing pi or memory:\n\tto use pi, type p.\n\tTo set memory, type m after it gives the answer you want in memory. To acces memory type m in a calculation")
 	
 	elif inp != "m":
+		num1 = ""
+		numSet = False
+		num2 = ""
+		op = ""
+		
 		for x in inp:
 			if x == "+" or x == "-" or x == "/" or x=="*":
 				op = x
@@ -40,22 +41,23 @@ while True:
 				if numSet == False:
 					if x == "p":
 						num1 = 3.14159
-						continue
 					
-					if x == "m":
+					elif x == "m":
 						num1 = memory
-						continue
-					num1 = num1+x
-				
+
+					else:
+						num1 = num1+x
 				else:
 					if x == "p":
 						num2 = 3.14159
-						continue
 					
-					if x == "m":
+					elif x == "m":
 						num2 = memory
-						continue
-					num2 = num2+x
+
+					else:
+						num2 = num2+x
+				continue
+
 			else:
 				print("That isn't a number")
 				numSet = "e"
