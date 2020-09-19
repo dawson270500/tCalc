@@ -6,6 +6,8 @@ print("Type 'exit' to stop, 'help' for help")
 while True:
 	inp = input(":> ")
 
+	inp = inp.replace(" ", "")
+	
 	if inp == "exit":	
 		break
 
@@ -40,7 +42,7 @@ while True:
 			if x.isnumeric() or x == "p" or x == "m":
 				if numSet == False:
 					if x == "p":
-						num1 = "3.14159"
+						num1 = 3.14159
 					
 					elif x == "m":
 						num1 = memory
@@ -49,7 +51,7 @@ while True:
 						num1 = num1+x
 				else:
 					if x == "p":
-						num2 = "3.14159"
+						num2 = 3.14159
 					
 					elif x == "m":
 						num2 = memory
