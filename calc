@@ -1,8 +1,8 @@
 if [ $# -lt 0 ]
 then
-	python3 /usr/src/ezdw/calc.py
+	python3 /usr/src/ezdw/tCalc/calc.py
 else
-	python3 /usr/src/ezdw/calc.py $*
+	python3 /usr/src/ezdw/tCalc/calc.py $*
 fi
 
 
