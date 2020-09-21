@@ -1,6 +1,8 @@
 # tCalc
 Basic calculator written in Python3. Runs in terminal.
+
 Version 1.2
+
 Written by Bailey Dawson
 
 Move all files into /bin/
