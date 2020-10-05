@@ -1,3 +1,5 @@
+Repo dead | New repo https://github.com/dawson270500/tCalcPP
+
 # tCalc
 Basic calculator written in Python3. Runs in terminal.
 
